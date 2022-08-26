@@ -15,6 +15,8 @@
             <fieldset>
                 <label id="name-label">Enter your name: <input id="name" type="text" required name="name"
                     placeholder="Your name goes here" /></label>
+                <label id="user-label">If you would like to go by a pseudonym enter it here: <input id="user"
+                    type="text" name="user" placeholder="A fake name"</label>    
                 <label id="email-label">Enter your email: <input id="email" type="email" required name="email"
                     placeholder="Your email goes here" /></label>
                 <label id="number-label">Enter your age: <input id="number" type="number" min="13" max="120" required
@@ -34,7 +36,7 @@
                 <label><input type="checkbox" name="event-type" class="inline" /> Psychic Event</label>
                 <!--Add more options here later-->
                 <label>If you took a picture of the event, please upload it here: <input type="file" name="photo" /></label>
-                <p class="radio">Would you like to remain anonymous?</p>
+                <p class="radio-anon">Would you like to remain anonymous?</p>
                 <label><input type="radio" name="anon" class="inline" required /> Yes, please do not use my name.</label>
                 <label><input type="radio" name="anon" class="inline" required /> No, you can use my name.</label>
                 <label>Please, describe the event in detail: 
@@ -43,6 +45,23 @@
                 </textarea> 
                 </label>
             </fieldset>
+            <fieldset>
+                <label>How did you hear about us?
+                    <select name="referrer">
+                        <option value="">(select one)</option>
+                        <option value="1">YouTube</option>
+                        <option value="2">Friend/Family</option>
+                        <option value="3">Website/Forum</option>
+                        <option value="4">Radio</option>
+                        <option value="5">News</option>
+                        <option value="6">Other</option>
+                    </select>
+                </label>
+                <p class="radio-signup">Would you like to sign up for our monthly newsletter?</p>
+                <label><input type="radio" name="signup" class="inline" required /> Yes</label>
+                <label><input type="radio" name="signup" class="inline" required /> No</label>
+            </fieldset>
+            <input type="submit" value="Submit This Form" />
         </form>
     </body>
 </html>
